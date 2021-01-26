@@ -1,31 +1,42 @@
 using System;
-using System.Collections.Generic;
 
-namespace TextBaseratSpel{
+namespace TextBaseratSpel
+{
 
-    public class Decision {
+    class Decision {
 
         private string message;
         private string[] alt;
 
+
         private string[] altMess;
 
-        public Decision(string message, string[] alt, string[] altMess){
+        public Decision(string message, string[] alt, string[] altMess)
+        {
 
             this.message = message;
 
-            for (int i = 0; i < alt.Length; i++) {
-                this.alt[i] = alt[i];
-            }
+            this.alt = alt;
+            this.altMess = altMess;
 
+            /*for (int i = alt.Length - 1; i >= 0; i--) {
+                this.alt = alt;
+                //alt[i] = this.alt[i];
+
+            }*/
+
+            /*
             for (int i = 0; i < altMess.Length; i++) {
-                this.altMess[i] = altMess[i];
-            }
+                // this.altMess[i] = altMess[i];
+                altMess[i] = this.altMess[i];
+            }*/
 
             SetAlt(alt);
             SetAlt(altMess);
 
         }
+
+
 
         public void SetAlt(string[] alt){
             for (int i = 0; i < alt.Length; i++) {
@@ -73,7 +84,7 @@ namespace TextBaseratSpel{
         }
 
 
-        public  int GetDecision(string message, string[] alt){
+        public int GetDecision(string message, string[] alt){
             int input;
             int decision = 0;
 
