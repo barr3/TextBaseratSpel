@@ -31,29 +31,29 @@ namespace TextBaseratSpel
                 altMess[i] = this.altMess[i];
             }*/
 
-            SetAlt(alt);
-            SetAlt(altMess);
+            //SetAlt(alt);
+            //SetAltMess(altMess);
 
         }
 
 
-
-        public void SetAlt(string[] alt){
+        private void SetAlt(string[] alt){
             for (int i = 0; i < alt.Length; i++) {
                 this.alt[i] = alt[i];
             }
         }
 
-        public void SetAltMess(string[] altMess){
+        private void SetAltMess(string[] altMess){
             for (int i = 0 ; i < altMess.Length; i++) {
                 this.altMess[i] = altMess[i];
             }
         }
 
 
-        public void ShowDecisions(string message, string[] altMess ){
 
-            switch (GetDecision(message, alt)) {
+        public int ShowDecisions(){
+            int dec = GetDecision();
+            switch (dec) {
                 case 1:
                     Console.WriteLine(altMess[1]);
                     break;
@@ -80,11 +80,12 @@ namespace TextBaseratSpel
                     break;
             }
 
+            return dec;
 
         }
 
 
-        public int GetDecision(string message, string[] alt){
+        private int GetDecision(){
             int input;
             int decision = 0;
 
@@ -105,7 +106,8 @@ namespace TextBaseratSpel
                     break;
 
                 } catch {
-                    Console.WriteLine("du gjorde fel, prova igen");
+                    Console.Clear();
+                    Console.WriteLine("Vänligen välj ett av alternativen");
                     Console.WriteLine(message);
 
                 }
