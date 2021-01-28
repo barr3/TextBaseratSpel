@@ -1,0 +1,12 @@
+#+TITLE: Manus
+
+* Förslag
+** Dungeons and Dragons
+Antingen färdiga historier eller historier från Isko o Co.
+*** TODO Gör en klass för spelaren
+**** Pengar
+**** Hälsa
+**** Annat i inventariet
+
+** Medea
+**

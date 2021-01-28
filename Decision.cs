@@ -19,21 +19,6 @@ namespace TextBaseratSpel
             this.alt = alt;
             this.altMess = altMess;
 
-            /*for (int i = alt.Length - 1; i >= 0; i--) {
-                this.alt = alt;
-                //alt[i] = this.alt[i];
-
-            }*/
-
-            /*
-            for (int i = 0; i < altMess.Length; i++) {
-                // this.altMess[i] = altMess[i];
-                altMess[i] = this.altMess[i];
-            }*/
-
-            //SetAlt(alt);
-            //SetAltMess(altMess);
-
         }
 
 
@@ -53,41 +38,20 @@ namespace TextBaseratSpel
 
         public int ShowDecisions(){
             int dec = GetDecision();
-            switch (dec) {
-                case 1:
-                    Console.WriteLine(altMess[1]);
-                    break;
-                case 2:
-                    Console.WriteLine(altMess[2]);
-                    break;
-                case 3:
-                    Console.WriteLine(altMess[3]);
-                    break;
-                case 4:
-                    Console.WriteLine(altMess[4]);
-                    break;
-                case 5:
-                    Console.WriteLine(altMess[5]);
-                    break;
-                case 6:
-                    Console.WriteLine(altMess[6]);
-                    break;
-                case 7:
-                    Console.WriteLine(altMess[7]);
-                    break;
-                case 8:
-                    Console.WriteLine(altMess[8]);
-                    break;
+
+            while (dec > alt.Length) {
+                Console.WriteLine("Vänligen ange ett alternativ");
+                dec = GetDecision();
             }
+
+            Console.WriteLine(altMess[dec-1]);
 
             return dec;
 
         }
 
-
         private int GetDecision(){
             int input;
-            int decision = 0;
 
             Console.WriteLine(message);
 
@@ -100,59 +64,23 @@ namespace TextBaseratSpel
                          Console.WriteLine(i + 1 + ": " +  alt[i]);
                     }
 
-
                     input = int.Parse(Console.ReadLine());
-
                     break;
 
                 } catch {
                     Console.Clear();
                     Console.WriteLine("Vänligen välj ett av alternativen");
                     Console.WriteLine(message);
-
                 }
-
 
             }
 
             //returns what decision was made by the user.
-            switch (input) {
-                case 1:
-                    decision = 1;
-                    break;
-                case 2:
-                    decision = 2;
-                    break;
-                case 3:
-                    decision = 3;
-                    break;
-                case 4:
-                    decision = 4;
-                    break;
-                case 5:
-                    decision = 5;
-                    break;
-                case 6:
-                    decision = 6;
-                    break;
-                case 7:
-                    decision = 7;
-                    break;
-                case 8:
-                    decision = 8;
-                    break;
-                default:
-                    //Fixa default
-                    Console.WriteLine("fixa default");
-                    break;
-            }
-
-            return decision;
+            return input;
 
 
 
         }
-
 
     }
 
