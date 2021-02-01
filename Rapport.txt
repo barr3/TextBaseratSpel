@@ -1,0 +1,30 @@
+
+
+
+
+Planering av applikation dvs beskrivning av programmet med egna ord.
+
+Jag började med att bara försöka göra ett program som ställde en fråga till användaren som kunde läsa av vilket val användaren gjorde och sedan agerade efter användarens val. Jag märkte snabbt att det blev väldigt mycket kod att skriva och att det var väldigt mycket som upprepades. Tanken var att jag först skulle lägga en ram, alltså hur programmet fundamentalt fungerar, för att sedan bygga på med "storyn". Jag började med att dela upp programmet i olika metoder för att kunna återanvända koden men jag tyckte fortfarande att det var rätt så rörig kod. Då bestämde jag mig för att göra spelet någorlunda objektorienterat. Jag gjorde då en Decision-klass som skapade objekt som är de olika valen man kan göra i spelet. Jag hade lite koll på objektorienterad programmering men jag behövde fortfarande lära mig en del. Det gick dock väldigt snabbt för mig att lära mig tycker jag. Jag expanderade sedan med fler klasser, en Player-klass för spelaren (och sedan fienderna) och en Fight-klass som användes för att fightas.
+
+Efter att ha lagt ramen för programmet började jag med lite av ett manus där jag la in vad som skulle sägas, vad användaren kunde välja och vad som skulle hända om man valde respektive alternativ. Jag hade gjort ett system som skulle städa upp koden och göra det lätt att lägga till fler storyelement, vilket jag tycker att den objektorienterade programmeringen åstadkom, även om jag tycker att det blev rätt så rörigt.
+
+
+
+Omdöme om kodkvalitet, felhantering, programmets komplextitet, krav och hur bra dessa uppfylls
+
+Varje gång användaren skriver in någonting i programmet så använder jag try-catch för att fånga upp eventuella fel. Jag har också kontrollerat att inputen från användaren inte är för stort eller för litet.
+
+När det kommer till kodkomplexitet tycker jag att koden ibland är lite svår att förstå, även för mig som har skrivit koden. Därför har jag lagt ned rätt så mycket tid på att kommentera min kod väldigt mycket. Jag tycker faktiskt att det var väldigt mycket värt det att kommentera min kod väldigt mycket.
+
+Alla kraven uppfylls inte (kanske??), spelet innehåller inte åtta frågor. Däremot finns det vissa frågor som bara kan frågas till spelaren om man väljer särskilda alternativ vid frågorna innan . Spelet är dock ett genusneutralt spel där spelarens val leder spelaren framåt. När det kommer till principerna för strukturerad programmering skulle jag säga att dessa för det mesta uppfylls, även om de kanske inte riktigt är "krav".
+Jag tycker att jag har delat upp problem väldigt bra, något som blev lättare eftersom jag "fuskade" lite och använde mig av objektorienterad programmering.
+Vad jag vet har jag inte heller upprepat särskilt mycket kod, de platser där jag har gjort det har jag gjort det för att jag inte har kommit på något bättre sätt. Ett exempel på detta är på rad 61-62 samt 92-93 (med flera). I det här fallet har jag inte lyckats få in player.ShowStats() i AfterDecision()-metoden.
+Jag tycker att jag har hållt koden någorlunda simpel (jag är dock inte stupid hehe). Jag gjorde dock "Fight"-klassen väldigt sent i utvecklingsprocessen så därför är den lite mer krånglig, jag hann helt enkelt inte snygga till koden. Detta är också en anledning till att jag inte har kommenterat i koden i den klassen lika mycket som i de andra klasserna. Jag tror dock att min kod i Program.cs absolut skulle kunna vara svår att förstå, vilket dock inte måste betyda att den är krånglig.
+Det mesta av funktionalitet skulle jag säga är nödvändig. Jag har läst igenom min kod rätt så många gånger så jag borde ha gjort mig av med den mesta onödig funktionalitet. I början hade Player-klassen exempelvis en funktionalitet som gjorde att man hade ett inventory där man kunde ha olika föremål, funktionalitet som inte riktigt var nödvändig.
+När det kommer till snabbfixar eller mer krävande lösningar vet jag inte riktigt. Som jag nämnde så har jag läst igenom min kod rätt så många gånger. Jag har också inte ett särskilt avancerat program. Dessa två faktorer kombinerat gör att jag kan anta att de flesta lösningar på problem jag har stött på inte är s.k "snabbfixar". "Fight"-klassen är dock ett undantag för detta eftersom jag inte har spenderat lika mycket tid på att läsa igenom koden för denna klass som de andra klasserna.
+
+Förslag på förbättringar/Användarvänlighet.
+
+Dessa två har jag slagit ihop för att de både är rätt så korta punkter och de har med varandra att göra.
+
+När det kommer till förbättringar så är det enda jag kan komma på att jag skulle vilja snygga till lite i koden i Fight-klassen i Fight.cs. Koden för fighten skulle vara väldigt olika beroende på hur många spelare det skulle vara. Dessutom hade jag missat några buggar. En av de var till exempel att en fiende kunde döda spelaren, även om fienden var död. Det fanns flera andra buggar som jag inte riktigt lyckades lösa. En annan förbättring skulle nog vara att använda olika färger i konsolen eftersom jag anser att det ibland är lite svårt att läsa texten i konsolen. Utöver det kan jag inte komma på något angående användarvänlighet som skulle kunna förbättras.
