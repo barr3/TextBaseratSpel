@@ -1,8 +1,3 @@
-/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.csprojAssemblyReference.cache
-/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.GeneratedMSBuildEditorConfig.editorconfig
-/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.AssemblyInfoInputs.cache
-/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.AssemblyInfo.cs
-/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.csproj.CoreCompileInputs.cache
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/TextBaseratSpel
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/TextBaseratSpel.deps.json
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/TextBaseratSpel.runtimeconfig.json
@@ -10,6 +5,11 @@
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/TextBaseratSpel.dll
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/ref/TextBaseratSpel.dll
 /home/barre/Development/Programmering/TextBaseratSpel/bin/Debug/net5.0/TextBaseratSpel.pdb
+/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.csprojAssemblyReference.cache
+/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.GeneratedMSBuildEditorConfig.editorconfig
+/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.AssemblyInfoInputs.cache
+/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.AssemblyInfo.cs
+/home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.csproj.CoreCompileInputs.cache
 /home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.dll
 /home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/ref/TextBaseratSpel.dll
 /home/barre/Development/Programmering/TextBaseratSpel/obj/Debug/net5.0/TextBaseratSpel.pdb
