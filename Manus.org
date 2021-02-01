@@ -1,12 +1,27 @@
 #+TITLE: Manus
 
+* TODO Kanske ta bort inventory
+* TODO Kanske göra character creation
+
 * Förslag
 ** Dungeons and Dragons
 Antingen färdiga historier eller historier från Isko o Co.
-*** TODO Gör en klass för spelaren
+*** DONE Gör en klass för spelaren
 **** Pengar
-**** Hälsa
+**** Hälsap
 **** Annat i inventariet
 
 ** Medea
 **
+
+* Manus
+** Du sitter på en bar med dina kompanjoner , vad vill du göra?
+1. Beställa en Öl
+2. Gå därifrån.
+3. Var med i darttävlingen.
+Alla alternativ gör att man får tillgång till en skattkarta. Om man beställer en öl förlorar man ett guldmynd och om man är med i darttävlingen så får man 5 extra guldmynt.
+** Du läser skattkartan , vad vill du göra?
+1. Börja leta.
+2. Gå och lägga dig.
+Om du valde att sova så kommer du att inte stöta på någon (eller nåt???). Om du valde att sova så kommer du att stöta på någon och behöva fighta dem. Efter det så går du hem och vilar dig.
+** Du tar dina kompisar och ni beger er ut.

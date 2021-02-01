@@ -24,13 +24,13 @@ namespace TextBaseratSpel
             Console.WriteLine("Your inventory is as follows: ");
 
             //Writes the players inventory
-            if (inventory.Length == 0) {
+           /* if (inventory.Length == 0) {
                 Console.WriteLine("Your inventory is empty");
             } else {
                 for (int i = 0; i < inventory.Length; i++) {
                     Console.WriteLine(inventory[i] + "\n");
                 }
-            }
+            } */
 
         }
         //Getter for the players' gold.
@@ -55,6 +55,7 @@ namespace TextBaseratSpel
         public void AddItem(string item){
             item = inventory[-1];
         }*/
+
 
     }
 
